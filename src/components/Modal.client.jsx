@@ -153,7 +153,7 @@ function ProductGallery({ media }) {
 
   return (
     <div
-      className={`grid grid-flow-col md:grid-flow-row  md:p-0 md:grid-cols-1 w-screen md:w-full lg:col-span-2`}
+      className={`grid grid-flow-col grid-cols-3 md:p-0 md:grid-cols-1 w-screen md:w-full lg:col-span-2`}
     >
       {/* <Slider {...settings}> */}
         {media.map((med, i) => {
