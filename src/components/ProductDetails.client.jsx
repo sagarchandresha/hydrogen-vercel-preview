@@ -6,11 +6,11 @@ import {
   BuyNowButton,
   AddToCartButton,
 } from "@shopify/hydrogen";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { CartDetails } from "./CartDetails.client";
 import { Drawer, useDrawer } from "./Drawer.client";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 export default function ProductDetails({ product }) {
   return (
@@ -175,13 +175,13 @@ function OptionRadio({ values, name }) {
 }
 
 function ProductGallery({ media }) {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
   if (!media.length) {
     return null;
   }
@@ -190,7 +190,7 @@ function ProductGallery({ media }) {
     <div
       className={`gap-4 md:p-0 w-screen md:w-full`}
     >
-      <Slider {...settings}>
+      {/* <Slider {...settings}> */}
         {media.map((med, i) => {
           let extraProps = {};
 
@@ -228,7 +228,7 @@ function ProductGallery({ media }) {
             </div>
           );
         })}
-      </Slider>
+      {/* </Slider> */}
     </div>
   );
 }

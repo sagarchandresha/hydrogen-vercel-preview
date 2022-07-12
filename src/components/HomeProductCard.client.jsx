@@ -11,8 +11,8 @@ import { useRef, useState } from "react";
 import { Drawer, useDrawer } from "./Drawer.client";
 import { CartDetails } from "./CartDetails.client";
 import Modal from "./Modal.client";
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 export default function HomeProductCard({ product }) {
   const { isOpen, openDrawer, closeDrawer } = useDrawer();

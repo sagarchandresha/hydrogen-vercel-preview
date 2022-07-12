@@ -6,7 +6,7 @@ import {
   useProductOptions,
 } from "@shopify/hydrogen";
 import { Fragment, useState } from "react";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 export default function Modal({ product }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -143,19 +143,19 @@ function ProductGallery({ media }) {
   if (!media.length) {
     return null;
   }
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  // };
 
   return (
     <div
       className={`grid grid-flow-col md:grid-flow-row  md:p-0 md:grid-cols-1 w-screen md:w-full lg:col-span-2`}
     >
-      <Slider {...settings}>
+      {/* <Slider {...settings}> */}
         {media.map((med, i) => {
           let extraProps = {};
 
@@ -193,7 +193,7 @@ function ProductGallery({ media }) {
             </div>
           );
         })}
-      </Slider>
+      {/* </Slider> */}
     </div>
   );
 }
