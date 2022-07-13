@@ -6,6 +6,7 @@ import {
   useProductOptions,
 } from "@shopify/hydrogen";
 import { Fragment, useState } from "react";
+import AwesomeSlider from "react-awesome-slider";
 // import Slider from "react-slick";
 
 export default function Modal({ product }) {
@@ -156,6 +157,7 @@ function ProductGallery({ media }) {
       className={`grid grid-flow-col grid-cols-3 md:p-0 md:grid-cols-1 w-screen md:w-full lg:col-span-2`}
     >
       {/* <Slider {...settings}> */}
+      <AwesomeSlider>
         {media.map((med, i) => {
           let extraProps = {};
 
@@ -193,6 +195,7 @@ function ProductGallery({ media }) {
             </div>
           );
         })}
+      </AwesomeSlider>
       {/* </Slider> */}
     </div>
   );

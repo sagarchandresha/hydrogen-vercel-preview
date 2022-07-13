@@ -8,7 +8,7 @@ import {
 } from "@shopify/hydrogen";
 import { CartDetails } from "./CartDetails.client";
 import { Drawer, useDrawer } from "./Drawer.client";
-import AwesomeSlider from "react-awesome-slider"
+import AwesomeSlider from "react-awesome-slider";
 import 'react-awesome-slider/dist/styles.css';
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
