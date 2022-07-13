@@ -6,9 +6,11 @@ import {
   BuyNowButton,
   AddToCartButton,
 } from "@shopify/hydrogen";
-// import Slider from "react-slick";
 import { CartDetails } from "./CartDetails.client";
 import { Drawer, useDrawer } from "./Drawer.client";
+import AwesomeSlider from "react-awesome-slider"
+import 'react-awesome-slider/dist/styles.css';
+// import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css"; 
 // import "slick-carousel/slick/slick-theme.css";
 
@@ -191,6 +193,7 @@ function ProductGallery({ media }) {
       className={`gap-4 md:p-0 w-screen md:w-full`}
     >
       {/* <Slider {...settings}> */}
+      <AwesomeSlider>
         {media.map((med, i) => {
           let extraProps = {};
 
@@ -228,6 +231,7 @@ function ProductGallery({ media }) {
             </div>
           );
         })}
+      </AwesomeSlider>
       {/* </Slider> */}
     </div>
   );
